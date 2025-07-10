@@ -1,0 +1,70 @@
+# python_training
+python training 
+def hi(): #callee 
+    print("hello students") #responses of callee
+    print("ganesh "*5)
+hi() #caller
+
+  function with parameters
+def add(student1, student2):
+    return student1 + student2
+student1=int(input("enter the money: "))
+student2=int(input("enter the money: "))
+total= add(student1, student2)
+print("total amount:", total)
+
+  function with parameters/return value
+def add(student1, student2):
+    print("total:", student1 + student2)
+student1=int(input("enter the money: "))
+student2=int(input("enter the money: "))
+add(student1, student2)
+
+
+# no_arguments_return_value.py
+def value():
+    return 3.14159
+result=value()
+print("value in the function is", result)
+
+  def get_name():
+    name= input("enter your name: ")
+    return name
+username=get_name()
+print("wellcome ", username)
+
+  a=100
+def value(a):
+    return a+18
+op=value(a)
+print(op)
+
+
+def info(name='unknown', age=0):
+    print("name:",name)
+    print("age:", age)
+info("ganesh", 20)
+info("mark")
+info(age=33)
+info()
+
+def cal(a,b):
+    return a+b, a-b, a*b, a/b
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+sum, diff, pro, div= cal(a,b)
+print("sum=", sum)
+print("diff=", diff)
+print("pro=", pro)
+print("div=", div)
+
+
+  #write a function..........
+def cal(a,b,c):
+    return max(a,b,c), min(a,b,c)
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+min, max=cal(a,b,c)
+print("min=", min)
+print("max=", max)
